@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287911F4226AFFA200DA7A1B /* HomeTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287911F3226AFFA200DA7A1B /* HomeTabController.swift */; };
+		287911FA226B008000DA7A1B /* MyGoalsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287911F9226B008000DA7A1B /* MyGoalsController.swift */; };
+		287911FC226B022600DA7A1B /* HealthKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287911FB226B022600DA7A1B /* HealthKitController.swift */; };
+		28791200226B03D100DA7A1B /* ExpertSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287911FF226B03D100DA7A1B /* ExpertSessionController.swift */; };
+		28791204226B04E300DA7A1B /* CommunityCareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28791203226B04E300DA7A1B /* CommunityCareController.swift */; };
+		28791206226B05D800DA7A1B /* BookAppointmentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28791205226B05D800DA7A1B /* BookAppointmentsController.swift */; };
 		90FA05AA2261B2D400C34C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA05A92261B2D400C34C9D /* AppDelegate.swift */; };
 		90FA05AC2261B2D400C34C9D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FA05AB2261B2D400C34C9D /* LoginController.swift */; };
 		90FA05AF2261B2D400C34C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FA05AD2261B2D400C34C9D /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287911F3226AFFA200DA7A1B /* HomeTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabController.swift; sourceTree = "<group>"; };
+		287911F9226B008000DA7A1B /* MyGoalsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalsController.swift; sourceTree = "<group>"; };
+		287911FB226B022600DA7A1B /* HealthKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitController.swift; sourceTree = "<group>"; };
+		287911FF226B03D100DA7A1B /* ExpertSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertSessionController.swift; sourceTree = "<group>"; };
+		28791203226B04E300DA7A1B /* CommunityCareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityCareController.swift; sourceTree = "<group>"; };
+		28791205226B05D800DA7A1B /* BookAppointmentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BookAppointmentsController.swift; path = GBCARE/Controllers/Tabbar/hometab/communitycare/BookAppointmentsController.swift; sourceTree = SOURCE_ROOT; };
 		90FA05A62261B2D400C34C9D /* GBCARE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBCARE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FA05A92261B2D400C34C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90FA05AB2261B2D400C34C9D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -41,6 +53,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287911F1226AFF5900DA7A1B /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				287911F2226AFF6C00DA7A1B /* hometab */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		287911F2226AFF6C00DA7A1B /* hometab */ = {
+			isa = PBXGroup;
+			children = (
+				287911F3226AFFA200DA7A1B /* HomeTabController.swift */,
+				287911F8226B002D00DA7A1B /* mygoals */,
+				287911F7226B002700DA7A1B /* healthkit */,
+				287911F6226B001F00DA7A1B /* bookappointments */,
+				28791202226B049400DA7A1B /* communitycare */,
+				287911F5226B001A00DA7A1B /* expertsession */,
+			);
+			path = hometab;
+			sourceTree = "<group>";
+		};
+		287911F5226B001A00DA7A1B /* expertsession */ = {
+			isa = PBXGroup;
+			children = (
+				287911FF226B03D100DA7A1B /* ExpertSessionController.swift */,
+			);
+			path = expertsession;
+			sourceTree = "<group>";
+		};
+		287911F6226B001F00DA7A1B /* bookappointments */ = {
+			isa = PBXGroup;
+			children = (
+				28791205226B05D800DA7A1B /* BookAppointmentsController.swift */,
+			);
+			name = bookappointments;
+			path = "New Group/bookappointments";
+			sourceTree = "<group>";
+		};
+		287911F7226B002700DA7A1B /* healthkit */ = {
+			isa = PBXGroup;
+			children = (
+				287911FB226B022600DA7A1B /* HealthKitController.swift */,
+			);
+			path = healthkit;
+			sourceTree = "<group>";
+		};
+		287911F8226B002D00DA7A1B /* mygoals */ = {
+			isa = PBXGroup;
+			children = (
+				287911F9226B008000DA7A1B /* MyGoalsController.swift */,
+			);
+			path = mygoals;
+			sourceTree = "<group>";
+		};
+		28791202226B049400DA7A1B /* communitycare */ = {
+			isa = PBXGroup;
+			children = (
+				28791203226B04E300DA7A1B /* CommunityCareController.swift */,
+			);
+			path = communitycare;
+			sourceTree = "<group>";
+		};
 		90FA059D2261B2D400C34C9D = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +181,7 @@
 		90FA05BF2261B38A00C34C9D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				287911F1226AFF5900DA7A1B /* Tabbar */,
 				90FA05AB2261B2D400C34C9D /* LoginController.swift */,
 				90FA05C12261BC6800C34C9D /* Registration */,
 			);
@@ -210,10 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				90FA05AC2261B2D400C34C9D /* LoginController.swift in Sources */,
+				287911FA226B008000DA7A1B /* MyGoalsController.swift in Sources */,
 				90FA05C82261BC9C00C34C9D /* Font+Extension.swift in Sources */,
 				90FA05C32261BC6800C34C9D /* RegistrationController.swift in Sources */,
 				90FA05AA2261B2D400C34C9D /* AppDelegate.swift in Sources */,
+				28791200226B03D100DA7A1B /* ExpertSessionController.swift in Sources */,
+				28791206226B05D800DA7A1B /* BookAppointmentsController.swift in Sources */,
+				287911F4226AFFA200DA7A1B /* HomeTabController.swift in Sources */,
+				287911FC226B022600DA7A1B /* HealthKitController.swift in Sources */,
 				90FA05C72261BC9C00C34C9D /* Extensions.swift in Sources */,
+				28791204226B04E300DA7A1B /* CommunityCareController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
