@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LoX-tG-h35">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Arj-7f-YVc">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -161,7 +161,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mH9-YJ-e0a">
-                                                    <rect key="frame" x="8" y="0.0" width="312" height="36.666666666666664"/>
+                                                    <rect key="frame" x="8" y="0.0" width="406" height="36.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgh-4f-lFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4681.875" y="-233.75"/>
+            <point key="canvasLocation" x="2988" y="-1277"/>
         </scene>
         <!--Community-->
         <scene sceneID="MSX-NG-9MA">
@@ -403,16 +403,23 @@
                                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn4-qi-IoR">
+                                        <rect key="frame" x="10" y="15" width="40" height="30"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2Ve-A6-jiJ"/>
+                                    <constraint firstItem="mn4-qi-IoR" firstAttribute="top" secondItem="IpI-c2-X7e" secondAttribute="top" id="47m-By-hzr"/>
                                     <constraint firstItem="NVy-Zb-aja" firstAttribute="centerY" secondItem="VI9-me-GUz" secondAttribute="centerY" id="896-LM-mbx"/>
                                     <constraint firstItem="NVy-Zb-aja" firstAttribute="leading" secondItem="TgF-Kl-yOd" secondAttribute="trailing" constant="10" id="AbX-am-XMe"/>
                                     <constraint firstItem="TgF-Kl-yOd" firstAttribute="leading" secondItem="IpI-c2-X7e" secondAttribute="trailing" constant="10" id="C0r-5w-Y4q"/>
                                     <constraint firstItem="TgF-Kl-yOd" firstAttribute="centerY" secondItem="VI9-me-GUz" secondAttribute="centerY" id="DSh-Iy-95A"/>
                                     <constraint firstItem="TgF-Kl-yOd" firstAttribute="centerX" secondItem="VI9-me-GUz" secondAttribute="centerX" id="I1z-GY-F34"/>
                                     <constraint firstAttribute="trailing" secondItem="NVy-Zb-aja" secondAttribute="trailing" constant="10" id="JDj-fm-mve"/>
+                                    <constraint firstItem="mn4-qi-IoR" firstAttribute="trailing" secondItem="IpI-c2-X7e" secondAttribute="trailing" id="S77-Rx-5Ow"/>
+                                    <constraint firstItem="mn4-qi-IoR" firstAttribute="leading" secondItem="IpI-c2-X7e" secondAttribute="leading" id="YoA-bB-zaY"/>
+                                    <constraint firstItem="mn4-qi-IoR" firstAttribute="bottom" secondItem="IpI-c2-X7e" secondAttribute="bottom" id="m6B-xI-2pT"/>
                                     <constraint firstItem="IpI-c2-X7e" firstAttribute="leading" secondItem="VI9-me-GUz" secondAttribute="leading" constant="10" id="uW9-H0-7CQ"/>
                                     <constraint firstItem="IpI-c2-X7e" firstAttribute="centerY" secondItem="VI9-me-GUz" secondAttribute="centerY" id="zi1-h0-Wzk"/>
                                 </constraints>
@@ -444,11 +451,12 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="btnSearch" destination="NVy-Zb-aja" id="tKJ-zq-iUX"/>
+                        <outlet property="btnSidebar" destination="mn4-qi-IoR" id="tL6-1b-HSn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peS-m9-yFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3893" y="-995"/>
+            <point key="canvasLocation" x="3892.753623188406" y="-995.38043478260875"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="SNC-pm-NZT">
@@ -718,7 +726,7 @@
                     </view>
                     <connections>
                         <segue destination="taR-kg-IQO" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSeguePushController" id="XhN-fK-KrO"/>
-                        <segue destination="LoX-tG-h35" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="6hA-az-C0b"/>
+                        <segue destination="LoX-tG-h35" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="qbC-8J-2bC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsJ-FR-IHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -795,7 +803,6 @@
         <!--Navigation Controller-->
         <scene sceneID="sq0-0j-d6c">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="57B-4p-nfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="LoX-tG-h35" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J9d-oq-H57">
@@ -806,6 +813,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pue-Vn-4ti"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="57B-4p-nfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1461" y="-558"/>
         </scene>

@@ -12,7 +12,7 @@ class HomeTabController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer())
         // Do any additional setup after loading the view.
     }
     

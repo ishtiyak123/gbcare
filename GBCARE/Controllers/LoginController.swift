@@ -29,7 +29,6 @@ class LoginController: UIViewController {
     @objc func callwithTimer(){
         
         let loginVc = self.storyboard!.instantiateViewController(withIdentifier: "HomeTabController") as! HomeTabController
-        loginVc.modalTransitionStyle = .crossDissolve
         navigationController!.pushViewController(loginVc,  animated: true)
         //present(loginVc, animated: true, completion: nil)
     }

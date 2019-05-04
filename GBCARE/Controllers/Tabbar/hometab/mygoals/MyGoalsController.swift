@@ -10,10 +10,12 @@ import UIKit
 
 class MyGoalsController: UIViewController {
 
+    @IBOutlet weak var btnSidebar: UIButton!
     @IBOutlet weak var btnSearch: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.view.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer())
+        btnSidebar.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        self.view.addGestureRecognizer(self.revealViewController()!.panGestureRecognizer())
         // Do any additional setup after loading the view.
     }
     
